@@ -1,0 +1,60 @@
+{
+    "title": "Spain Covid19 Stats until 2020-04-12",
+    "subtitle": "official data: https://covid19.isciii.es/",
+    "description": "This is the official data",
+    "id": "krukmat/spain-covid19-stats-until-20200412", 
+    "isPrivate": false,
+    "licenses": [
+        {
+            "name": "copyright-authors"
+        }
+    ],
+    "keywords": [
+        "tabular data",
+        "covid19"
+    ],
+    "collaborators": [],
+    "data": [
+        {
+            "description": "Datos oficiales proveidos por Ministerio de Sanidad",
+            "name": "dataset.csv",
+            "columns": [
+                {
+                    "name": "CCAA",
+                    "description": "Autonomias",
+                    "type": "String"
+                },
+                {
+                    "name": "FECHA",
+                    "description": "Fecha",
+                    "type": "String"
+                },
+                {
+                    "name": "CASOS",
+                    "description": "Cantidad de casos",
+                    "type": "Uuid"
+                },
+                {
+                    "name": "Hospitalizados",
+                    "description": "Cantidad de hospitalizados",
+                    "type": "Uuid"
+                },
+                {
+                    "name": "UCI",
+                    "description": "Cantidad de ingresos en UCI",
+                    "type": "Uuid"
+                },
+                {
+                    "name": "Fallecidos",
+                    "description": "Cantidad de fallecidos",
+                    "type": "Uuid"
+                },
+                {
+                    "name": "Recuperados",
+                    "description": "Cantidad de recuperados",
+                    "type": "Uuid"
+                }
+            ]
+        }
+    ]
+}
