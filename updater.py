@@ -11,9 +11,9 @@ def update_data():
     data = list(cr)
     writer = csv.writer(open("/root/dataset/dataset.csv", 'w'))
     for row in data:
+        writer.writerow(row)
         if row[0] == '':
             break
-        writer.writerow(row)
 def job():
     print("Extract data")
     update_data()
