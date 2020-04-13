@@ -11,7 +11,7 @@ def update_data():
     data = list(cr)
     writer = csv.writer(open("/root/dataset/dataset.csv", 'w'))
     for row in data:
-        if len(row) == 0:
+        if row[0] == '':
             break
         writer.writerow(row)
 def job():
