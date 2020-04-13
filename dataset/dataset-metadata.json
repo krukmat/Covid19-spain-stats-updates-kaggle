@@ -1,7 +1,7 @@
 {
     "title": "Spain Covid19 Stats updated",
     "subtitle": "official data: https://covid19.isciii.es/",
-    "description": "## Content: ###Datos oficiales proveidos por Ministerio de Sanidad - ##Source = https://covid19.isciii.es/",
+    "description": "## Content:  - Datos oficiales proveidos por Ministerio de Sanidad  - Source = https://covid19.isciii.es/",
     "id": "krukmat/spain-covid19-stats-until-20200412", 
     "isPrivate": false,
     "licenses": [
