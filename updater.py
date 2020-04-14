@@ -12,14 +12,14 @@ def update_data():
     writer = csv.writer(open("/root/dataset/dataset.csv", 'w'))
     for row in data:
         writer.writerow(row)
-        if row and row[0] == '':
+        if len(row) == 0:
             break
 def job():
     print("Extract data")
     update_data()
     subprocess.call(['kaggle', 'datasets', 'version', '-p', '/root/dataset/', '-m', 'new version'])
 
-schedule.every().day.at("16:30").do(job)
+schedule.every().day.at("17:12").do(job)
 
 while True:
     schedule.run_pending()
