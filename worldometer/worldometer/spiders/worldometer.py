@@ -17,4 +17,7 @@ class WorldometerSpider(scrapy.Spider):
                 'newdeath':country.css('td')[4].css('td::text').get(),
                 'totalrecovered':country.css('td')[5].css('td::text').get(),
                 'activecases':country.css('td')[6].css('td::text').get(),
+                'criticalcases':country.css('td')[7].css('td::text').get(),
+                'totaltests':country.css('td')[10].css('td::text').get(),
+                'totaltestsOver1M':country.css('td')[11].css('td::text').get(),
             }

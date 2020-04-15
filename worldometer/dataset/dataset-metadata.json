@@ -55,6 +55,21 @@
                     "name": "totalcases",
                     "description": "Total of cases (active + closed)",
                     "type": "String"
+                },
+                {
+                    "name": "criticalcases",
+                    "description": "Total of cases (active + closed)",
+                    "type": "String"
+                },
+                {
+                    "name": "totaltests",
+                    "description": "Total tests",
+                    "type": "String"
+                },
+                {
+                    "name": "totaltestsOver1M",
+                    "description": "Total tests / 1 millon",
+                    "type": "String"
                 }
             ]
         }
