@@ -19,7 +19,7 @@ def job():
     update_data()
     subprocess.call(['kaggle', 'datasets', 'version', '-p', '/root/dataset/', '-m', 'new version'])
 
-schedule.every().day.at("17:12").do(job)
+schedule.every().day.at("15:30").do(job)
 
 while True:
     schedule.run_pending()
