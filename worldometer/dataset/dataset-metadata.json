@@ -1,24 +1,61 @@
 {
-    "title": "Worldometer",
+    "title": "Worldometer stats",
     "subtitle": "official data: https://www.worldometers.info/coronavirus/#countries/",
-    "description": "",
     "id": "krukmat/worldometer-stats", 
+    "description": "### Context\n\nThere's a story behind every dataset and here's your opportunity to share yours.\n\n\n### Content\n\n             - {\n                    \"name\": \"totaldeath\",\n                    \"description\": \"Total of death so far\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"name\",\n                    \"description\": \"Country\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"newcases\",\n                    \"description\": \"The number of new cases the current date\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"newdeath\",\n                    \"description\": \"The number of new death the current date\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"totalrecovered\",\n                    \"description\": \"The number of recoveries so far\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"activecases\",\n                    \"description\": \"Total of active cases so far\",\n                    \"type\": \"String\"\n                },\n                {\n                    \"name\": \"totalcases\",\n                    \"description\": \"Total of cases (active + closed)\",\n                    \"type\": \"String\"\n                }\n\n\n\n### Inspiration\n\nThis is my 2 cents to help the data science community to use to research or academic purposes.",
     "isPrivate": false,
     "licenses": [
         {
-            "name": "copyright-authors"
+            "name": "CC0-1.0"
         }
     ],
     "keywords": [
         "tabular data",
+        "data management",
         "covid19"
     ],
     "collaborators": [],
     "data": [
         {
-            "description": "Datos oficiales proveidos por de worldometer",
+            "description": "The data is based on: https://www.worldometers.info/coronavirus/#countries",
             "name": "wworldometer.csv",
+            "totalBytes": 20757,
             "columns": [
+                {
+                    "name": "totaldeath",
+                    "description": "Total of death so far",
+                    "type": "String"
+                },
+                {
+                    "name": "name",
+                    "description": "Country",
+                    "type": "String"
+                },
+                {
+                    "name": "newcases",
+                    "description": "The number of new cases the current date",
+                    "type": "String"
+                },
+                {
+                    "name": "newdeath",
+                    "description": "The number of new death the current date",
+                    "type": "String"
+                },
+                {
+                    "name": "totalrecovered",
+                    "description": "The number of recoveries so far",
+                    "type": "String"
+                },
+                {
+                    "name": "activecases",
+                    "description": "Total of active cases so far",
+                    "type": "String"
+                },
+                {
+                    "name": "totalcases",
+                    "description": "Total of cases (active + closed)",
+                    "type": "String"
+                }
             ]
         }
     ]
