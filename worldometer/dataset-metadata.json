@@ -1,0 +1,25 @@
+{
+    "title": "Worldometer",
+    "subtitle": "official data: https://www.worldometers.info/coronavirus/#countries/",
+    "description": "",
+    "id": "krukmat/worldometer-stats", 
+    "isPrivate": false,
+    "licenses": [
+        {
+            "name": "copyright-authors"
+        }
+    ],
+    "keywords": [
+        "tabular data",
+        "covid19"
+    ],
+    "collaborators": [],
+    "data": [
+        {
+            "description": "Datos oficiales proveidos por de worldometer",
+            "name": "dataset.csv",
+            "columns": [
+            ]
+        }
+    ]
+}
