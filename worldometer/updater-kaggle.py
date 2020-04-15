@@ -10,7 +10,7 @@ def job():
     subprocess.call(['scrapy', 'crawl', 'worldometer', '-o', 'wworldometer.csv','-t','csv'])
     subprocess.call(['kaggle', 'datasets', 'version', '-p', '.', '-m', 'new version'])
 
-schedule.every().day.at("17:00").do(job)
+schedule.every().day.at("18:00").do(job)
 
 while True:
     schedule.run_pending()

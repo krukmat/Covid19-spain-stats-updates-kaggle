@@ -17,7 +17,7 @@
     "data": [
         {
             "description": "Datos oficiales proveidos por de worldometer",
-            "name": "dataset.csv",
+            "name": "wworldometer.csv",
             "columns": [
             ]
         }
