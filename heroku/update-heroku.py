@@ -3,12 +3,10 @@ import time
 import requests
 
 def job():
-    url = 'https://worldometer-scrapper.herokuapp.com/api/update/'
-    print("send data to heroku")    
-    files = {'file': open('/root/worldometer/dataset/wworldometer.csv', 'rb')}
-    r = requests.post(url, files=files)
+    url = 'http://134.122.68.234/api/update/'
+    r = requests.post(url)
 
-schedule.every().day.at("16:40").do(job)
+schedule.every().day.at("17:10").do(job)
 
 while True:
     schedule.run_pending()
