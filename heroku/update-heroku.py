@@ -8,7 +8,7 @@ def job():
     files = {'file': open('/root/worldometer/dataset/wworldometer.csv', 'rb')}
     r = requests.post(url, files=files)
 
-schedule.every().day.at("22:00").do(job)
+schedule.every().day.at("16:40").do(job)
 
 while True:
     schedule.run_pending()
