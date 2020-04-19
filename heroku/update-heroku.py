@@ -6,7 +6,7 @@ def job():
     url = 'http://134.122.68.234/api/update/'
     r = requests.post(url)
 
-schedule.every().day.at("17:40").do(job)
+schedule.every().day.at("18:00").do(job)
 
 while True:
     schedule.run_pending()
