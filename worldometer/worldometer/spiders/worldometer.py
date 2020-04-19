@@ -7,13 +7,16 @@ class WorldometerSpider(scrapy.Spider):
         'https://www.worldometers.info/coronavirus/#countries'
     ]
 
+    def _removeNonAscii(s): 
+        return "".join(i for i in s if ord(i)<128)
+
     def evaluate_col(self, country, index):
         return country.css('td')[index].css('td::text').get()!=None and (country.css('td')[index].css('td::text').get()!=None and  country.css('td')[index].css('td::text').get().strip() != 'N/A' and country.css('td')[index].css('td::text').get().strip() !='')
 
     def parse(self, response):
         for country in response.xpath('//*[@id="main_table_countries_today"]/tbody[1]/tr[@style=""]'):
             yield {
-                'name': country.css('td a::text').get(),
+                'name': _removeNonAscii(country.css('td a::text').get()),
                 'totalcases': int(country.css('td')[1].css('td::text').get().replace('"','').replace(',','')) if  self.evaluate_col(country, 1)  else 0,
                 'newcases':int(country.css('td')[2].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 2) else 0,
                 'totaldeath':int(country.css('td')[3].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 3)  else 0,
