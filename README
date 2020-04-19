@@ -1,2 +1,3 @@
 nohup python updater.py &
 nohup python updater-kaggle.py &
+nohup update-heroku.py &
