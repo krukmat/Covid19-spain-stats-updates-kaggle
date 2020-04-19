@@ -14,13 +14,13 @@ class WorldometerSpider(scrapy.Spider):
         for country in response.xpath('//*[@id="main_table_countries_today"]/tbody[1]/tr[@style=""]'):
             yield {
                 'name': country.css('td a::text').get().strip(),
-                'totalcases': float(country.css('td')[1].css('td::text').get().replace('"','').replace(',','')) if  self.evaluate_col(country, 1)  else 0,
-                'newcases':float(country.css('td')[2].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 2) else 0,
-                'totaldeath':float(country.css('td')[3].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 3)  else 0,
-                'newdeath':float(country.css('td')[4].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 4) else 0,
-                'totalrecovered':float(country.css('td')[5].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 5) else 0,
-                'activecases':float(country.css('td')[6].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 6)  else 0,
-                'criticalcases':float(country.css('td')[7].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 7)  else 0,
-                'totaltests':float(country.css('td')[10].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 10) else 0,
-                'totaltestsOver1M':float(country.css('td')[11].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 11) else 0,
+                'totalcases': int(country.css('td')[1].css('td::text').get().replace('"','').replace(',','')) if  self.evaluate_col(country, 1)  else 0,
+                'newcases':int(country.css('td')[2].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 2) else 0,
+                'totaldeath':int(country.css('td')[3].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 3)  else 0,
+                'newdeath':int(country.css('td')[4].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 4) else 0,
+                'totalrecovered':int(country.css('td')[5].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 5) else 0,
+                'activecases':int(country.css('td')[6].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 6)  else 0,
+                'criticalcases':int(country.css('td')[7].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 7)  else 0,
+                'totaltests':int(country.css('td')[10].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 10) else 0,
+                'totaltestsOver1M':int(country.css('td')[11].css('td::text').get().replace('"','').replace(',','')) if self.evaluate_col(country, 11) else 0,
             }
