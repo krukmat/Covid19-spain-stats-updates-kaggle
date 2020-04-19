@@ -1,29 +1,5 @@
 totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
 39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-20639.0,7371.0,Spain,930230.0,19896.0,0,74797.0,0,98980.0,194416.0
-23227.0,2733.0,Italy,1305833.0,21598.0,0,44927.0,0,107771.0,175925.0
-19323.0,5833.0,France,463662.0,7103.0,0,35983.0,0,96487.0,151793.0
-4538.0,2922.0,Germany,1728357.0,20629.0,0,88000.0,0,51186.0,143724.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-20639.0,7371.0,Spain,930230.0,19896.0,1528.0,77357.0,0,97948.0,195944.0
-23227.0,2733.0,Italy,1305833.0,21598.0,0,44927.0,0,107771.0,175925.0
-19323.0,5833.0,France,463662.0,7103.0,0,35983.0,0,96487.0,151793.0
-4538.0,2922.0,Germany,1728357.0,20629.0,0,88000.0,0,51186.0,143724.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
-20639.0,7371.0,Spain,930230.0,19896.0,1528.0,77357.0,0,97948.0,195944.0
-23227.0,2733.0,Italy,1305833.0,21598.0,0,44927.0,0,107771.0,175925.0
-19323.0,5833.0,France,463662.0,7103.0,0,35983.0,0,96487.0,151793.0
-4538.0,2922.0,Germany,1728357.0,20629.0,0,88000.0,0,51186.0,143724.0
-totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovered,newdeath,activecases,totalcases
-39015.0,13551.0,USA,3722209.0,11245.0,131.0,68285.0,1.0,631623.0,738923.0
 20639.0,7371.0,Spain,930230.0,19896.0,1528.0,77357.0,0,97948.0,195944.0
 23227.0,2733.0,Italy,1305833.0,21598.0,0,44927.0,0,107771.0,175925.0
 19323.0,5833.0,France,463662.0,7103.0,0,35983.0,0,96487.0,151793.0
@@ -115,8 +91,8 @@ totaldeath,criticalcases,name,totaltests,totaltestsOver1M,newcases,totalrecovere
 4.0,10.0,Costa Rica,10138.0,1990.0,0,97.0,0,554.0,655.0
 19.0,0,Niger,4715.0,195.0,0,113.0,0,507.0,639.0
 36.0,0,Burkina Faso,0,0,0,321.0,0,208.0,565.0
+26.0,5.0,Albania,5542.0,1926.0,14.0,314.0,0,222.0,562.0
 5.0,5.0,Kyrgyzstan,26147.0,4008.0,48.0,133.0,0,416.0,554.0
-26.0,5.0,Albania,5311.0,1846.0,0,302.0,0,220.0,548.0
 19.0,2.0,Nigeria,7153.0,35.0,0,166.0,0,357.0,542.0
 32.0,3.0,Bolivia,3569.0,306.0,27.0,31.0,1.0,457.0,520.0
 3.0,0,Guinea,0,0,0,65.0,0,450.0,518.0
