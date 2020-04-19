@@ -8,7 +8,7 @@ class WorldometerSpider(scrapy.Spider):
     ]
 
     def evaluate_col(self, country, index):
-        return country.css('td')[index].css('td::text').get()!=None or (country.css('td')[index].css('td::text').get()!=None and  country.css('td')[index].css('td::text').get().strip() != 'N/A' and country.css('td')[index].css('td::text').get().strip() !='')
+        return country.css('td')[index].css('td::text').get()!=None and (country.css('td')[index].css('td::text').get()!=None and  country.css('td')[index].css('td::text').get().strip() != 'N/A' and country.css('td')[index].css('td::text').get().strip() !='')
 
     def parse(self, response):
         for country in response.xpath('//*[@id="main_table_countries_today"]/tbody[1]/tr[@style=""]'):
