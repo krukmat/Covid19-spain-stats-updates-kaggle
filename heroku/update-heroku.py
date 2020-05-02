@@ -3,7 +3,7 @@ import time
 import requests
 
 def job():
-    url = 'http://134.122.68.234/api/update/'
+    url = 'http://157.230.101.0/api/update/'
     r = requests.post(url)
 
 schedule.every().day.at("18:00").do(job)
